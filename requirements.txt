@@ -1,5 +1,5 @@
 setuptools
-Flask==1.1.2
+Flask==2.2.2
 matplotlib==3.5.3
 numpy
 opencv_contrib_python==4.7.0.68
