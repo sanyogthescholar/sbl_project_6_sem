@@ -129,4 +129,4 @@ def get_student_image():
   verify(img_ret) #where the magic happens
   return render_template("done.html")
 
-app.run(port=5000, debug=True)
+#app.run(port=5000, debug=True)
