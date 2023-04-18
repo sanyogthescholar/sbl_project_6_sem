@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Face Mask Detection</title>
+  <!--<link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">-->
+</head>
+
+<body>
+  <!--<canvas id="canvas">
+  </canvas>-->
+  <video id="video" width="720px" height="560px" autoplay muted></video>
+  <button type="button" id="btnCapture">Capture</button>
+  <canvas id="canvas2" width="720px" height="560px"></canvas>
+  <button type="button" id="btnSave">Save</button>
+  <form id="student_data" method="POST" action="/upload">
+    <input type="hidden" name="base64data" id="input_student"/>
+  </form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'face-api.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='webcam.min.js') }}"></script>
+
+</html>
