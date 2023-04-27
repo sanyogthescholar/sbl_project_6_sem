@@ -12,9 +12,9 @@ import os
 
 app = Flask(__name__)
 
-ENDPOINT = "https://sblvitsem6.cognitiveservices.azure.com/"
+ENDPOINT = "https://sbl-face-api.cognitiveservices.azure.com/"
 SUBSCRIPTION_KEY = os.environ["SUBSCRIPTION_KEY"]
-FACE_API_URL = "https://sblvitsem6.cognitiveservices.azure.com/" + "/face/v1.0/detect"
+FACE_API_URL = "https://sbl-face-api.cognitiveservices.azure.com/" + "/face/v1.0/detect"
 
 headers = {
     'Ocp-Apim-Subscription-Key': SUBSCRIPTION_KEY,
